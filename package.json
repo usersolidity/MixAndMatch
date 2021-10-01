@@ -1,0 +1,49 @@
+{
+  "name": "mixandmatch",
+  "version": "1.0.0",
+  "description": "Solidity base contract template",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npx hardhat test --network hardhat",
+    "clean": "rimraf ./cache && rimraf ./artifacts",
+    "compile": "npm run clean && hardhat compile",
+    "prettier": "prettier --write 'contracts/**/*.sol'"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.2.1",
+    "@nomiclabs/hardhat-ethers": "^2.0.1",
+    "@nomiclabs/hardhat-etherscan": "^2.1.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@openzeppelin/contracts": "^4.1.0",
+    "@openzeppelin/contracts-upgradeable": "^4.3.1",
+    "@openzeppelin/truffle-upgrades": "^1.6.1",
+    "chai": "^4.3.4",
+    "dotenv": "^9.0.2",
+    "eth-sig-util": "^3.0.1",
+    "ethereumjs-util": "^5.1.2",
+    "ethjs": "^0.2.8",
+    "hardhat": "^2.1.2",
+    "hardhat-contract-sizer": "^2.0.3",
+    "hardhat-deploy": "^0.7.0-beta.58",
+    "hardhat-docgen": "^1.1.1",
+    "hardhat-tracer": "^1.0.0-alpha.6"
+  },
+  "devDependencies": {
+    "elliptic": "^6.5.4",
+    "ethereum-waffle": "^3.2.0",
+    "ethers": "^5.4.5",
+    "hardhat-gas-reporter": "^1.0.4",
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.6.1",
+    "prettier": "^2.3.0",
+    "prettier-plugin-solidity": "^1.0.0-beta.10",
+    "solidity-coverage": "^0.7.16",
+    "underscore": "^1.13.1",
+    "ws": "^8.2.0",
+    "y18n": "^5.0.8",
+    "yargs-parser": "^20.2.9"
+  }
+}
